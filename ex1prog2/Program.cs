@@ -8,7 +8,7 @@ namespace Excercise_1
 {
     class Program
     {
-        //try
+       
         public static void RunMissions(IList<IMission> missions, double val)
         {
             foreach (var m in missions)

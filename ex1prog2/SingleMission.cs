@@ -14,7 +14,7 @@ namespace Excercise_1
         public event EventHandler<double> OnCalculate;
 
 
-        SingleMission(Func func, string missionName)
+        public SingleMission(Func func, string missionName)
         {
             funcToCalc = func;
             name = missionName;
@@ -38,10 +38,9 @@ namespace Excercise_1
 
         public double Calculate(double value)
         {
-            OnCalculate?.Invoke(this, value);
-            return funcToCalc(value);
+            double x = funcToCalc(value);
+            OnCalculate?.Invoke(this, x);
+            return x;
         }
-
-
     }
 }

@@ -27,5 +27,10 @@ namespace Excercise_1
                 dict[funcName] = value;
             }
         }
+
+        public IList<string> getAllMissions()
+        {
+            return dict.Keys.ToList();
+        }
     }
 }

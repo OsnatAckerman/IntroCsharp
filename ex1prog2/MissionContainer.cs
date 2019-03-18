@@ -33,6 +33,7 @@ namespace Excercise_1
             }
         }
 
+        /*returns all Keys as a list*/
         public IList<string> getAllMissions()
         {
             return dict.Keys.ToList();
